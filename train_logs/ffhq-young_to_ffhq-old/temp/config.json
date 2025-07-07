@@ -1,0 +1,33 @@
+{
+    "seed": 1024,
+    "exp": "temp",
+    "problem_name": "ffhq-young_to_ffhq-old",
+    "image_size": 256,
+    "num_channels": 3,
+    "batch_size": 4,
+    "num_iterations": 5000,
+    "lr_g": 1e-05,
+    "lr_d": 1e-05,
+    "beta1": 0.0,
+    "beta2": 0.9,
+    "lr_scheduler": false,
+    "eta_min": 1e-05,
+    "K_v": 1,
+    "K_T": 1,
+    "use_ema": false,
+    "lmbda": 0,
+    "tau": 0.001,
+    "phi1": "linear",
+    "phi2": "linear",
+    "print_every": 10,
+    "save_ckpt_every": 10000,
+    "save_image_every": 1000,
+    "fid_every": 0,
+    "size": [
+        3,
+        256,
+        256
+    ],
+    "device": "cuda:0",
+    "train": false
+}

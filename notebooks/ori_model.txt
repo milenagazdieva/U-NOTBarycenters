@@ -1,0 +1,4193 @@
+{'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe(){'class_name': 'training.dataset.ImageFolderDataset', 'path': '/home/mounted/stylegan2_ada_pytorch/datasets/MNIST-colored_2_3.zip', 'use_labels': False, 'max_size': 12090, 'xflip': False, 'resolution': 32}Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)Discriminator(
+  (b32): DiscriminatorBlock(
+    (fromrgb): Conv2dLayer()
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b16): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b8): DiscriminatorBlock(
+    (conv0): Conv2dLayer()
+    (conv1): Conv2dLayer()
+    (skip): Conv2dLayer()
+  )
+  (b4): DiscriminatorEpilogue(
+    (mbstd): MinibatchStdLayer()
+    (conv): Conv2dLayer()
+    (fc): FullyConnectedLayer()
+    (out): FullyConnectedLayer()
+  )
+)Generator(
+  (synthesis): SynthesisNetwork(
+    (b4): SynthesisBlock(
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b8): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b16): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+    (b32): SynthesisBlock(
+      (conv0): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (conv1): SynthesisLayer(
+        (affine): FullyConnectedLayer()
+      )
+      (torgb): ToRGBLayer(
+        (affine): FullyConnectedLayer()
+      )
+    )
+  )
+  (mapping): MappingNetwork(
+    (fc0): FullyConnectedLayer()
+    (fc1): FullyConnectedLayer()
+    (fc2): FullyConnectedLayer()
+    (fc3): FullyConnectedLayer()
+    (fc4): FullyConnectedLayer()
+    (fc5): FullyConnectedLayer()
+    (fc6): FullyConnectedLayer()
+    (fc7): FullyConnectedLayer()
+  )
+)AugmentPipe()
